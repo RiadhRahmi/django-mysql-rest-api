@@ -88,14 +88,25 @@ WSGI_APPLICATION = 'dj_mysql_restapi.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'djmysql',
+#         'USER': 'djmysql',
+#         'PASSWORD': 'djmysql',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djmysql',
-        'USER': 'djmysql',
-        'PASSWORD': 'djmysql',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djpostgresql_db',
+        'USER': 'djpostgresql_db',
+        'PASSWORD': 'djpostgresql_db',
         'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'PORT': '5432',
     }
 }
 
